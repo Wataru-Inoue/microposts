@@ -1,0 +1,17 @@
+<div class="row">
+  <aside class="col-md-4">
+    <%= render 'user_info' %>
+    <%= render 'user_follow' %>
+  </aside>
+  <div class="col-md-8">
+    <%= render 'follow_form' if logged_in? %>
+    <h3><%= @title %> (<%= @users.count %>)</h3>
+    <table class="table">
+      <tr>
+        <th>アイコン</th>
+        <th>ユーザー名</th>
+      </tr>
+      <%= render @users %>
+    </table>
+  </div>
+</div>
