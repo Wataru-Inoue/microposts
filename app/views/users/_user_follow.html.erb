@@ -1,4 +1,4 @@
 <section class="user_follow">
-    <%= link_to "followings", followings_user_path(current_user), :class =>'btn btn-info' %> 
-    <%= link_to "followers", followers_user_path(current_user), :class => 'btn btn-success' %> 
+    <%= link_to "followings", followings_user_path(@user), :class =>'btn btn-info' %> 
+    <%= link_to "followers", followers_user_path(@user), :class => 'btn btn-success' %> 
 </section>
